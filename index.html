@@ -23,20 +23,23 @@
           Left Side
 
           <div class="player-container">
-            <div class="input-group mb-3">
+            <div id="" class="input-group mb-3">
               <input
+                id="input-field"
                 type="text"
                 class="form-control"
-                placeholder="Recipient's username"
+                placeholder="Enter Player Name"
                 aria-label="Recipient's username"
                 aria-describedby="button-addon2"
               />
               <button
+                onclick="getPlayers()"
+                id="input-button"
                 class="btn btn-outline-secondary"
                 type="button"
                 id="button-addon2"
               >
-                Button
+                Click
               </button>
             </div>
           </div>
