@@ -39,7 +39,7 @@ const displayPlayerDetail = (players) => {
               <p></p>
               <div class="all-button">
                 <div class="btn btn-danger">Delete</div>
-                <div class="btn btn-success">Details</div>
+                <div onclick="eachPlayerDetails()"class="btn btn-success">Details</div>
               </div>
             </div>`
         parent.appendChild(insideParentDiv);
@@ -47,4 +47,8 @@ const displayPlayerDetail = (players) => {
     }
 
     
+}
+
+const eachPlayerDetails = () => {
+ 
 }
