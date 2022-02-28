@@ -26,16 +26,16 @@ const displayPlayerDetail = (players) => {
     // console.log(players);
 
     for ( const player of players) {
-        console.log(player);
+        console.log(player.strPlayer);
         const parent = document.getElementById('player-card');
         const insideParentDiv = document.createElement('div');
         insideParentDiv.innerHTML=` <div class="card">
               <div class="prof-pic">
                 <img class="w-25" src="${player.strThumb}" alt="" />
               </div>
-              <h2>Name: </h2>
+              <h2>Name: ${player.strPlayer}</h2>
               <img src="" alt="">
-              <h5>Country:</h5>
+              <h5>Country:${player.strNationality}</h5>
               <p></p>
               <div class="all-button">
                 <div class="btn btn-danger">Delete</div>
