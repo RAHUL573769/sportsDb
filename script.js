@@ -1,18 +1,18 @@
-let inputFieldSelect = document.getElementById('input-field');
-const inputButtonSelect = document.getElementById('input-button');
 
+// const inputButtonSelect = document.getElementById('input-button');
+let inputFieldSelect = document.getElementById('input-field');
 
 const getPlayers = () => {
 
-     inputFieldSelect.value = ' ';
+   
     const url = `https://www.thesportsdb.com/api/v1/json/2/searchplayers.php?p=${inputFieldSelect.value}`;
-
+  inputFieldSelect.value = ' ';
     fetch(url)
         .then(data => data.json())
         .then(data => displayPlayerDetail(data.player))
     
 
-    // console.log(url);
+    console.log(url);
  
 
    
@@ -31,9 +31,10 @@ const displayPlayerDetail = (players) => {
         const insideParentDiv = document.createElement('div');
         insideParentDiv.innerHTML=` <div class="card">
               <div class="prof-pic">
-                <img src="" alt="" />
+                <img class="w-25" src="${player.strThumb}" alt="" />
               </div>
-              <h2>Name::Rahul </h2>
+              <h2>Name: </h2>
+              <img src="" alt="">
               <h5>Country:</h5>
               <p></p>
               <div class="all-button">
